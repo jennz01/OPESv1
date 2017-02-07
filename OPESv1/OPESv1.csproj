@@ -71,6 +71,7 @@
       <DependentUpon>OPESData.mdf</DependentUpon>
     </Content>
     <Content Include="Jenn\Login\WebForm1.aspx" />
+    <Content Include="Jenn\Login\WebForm2.aspx" />
     <Content Include="packages.config" />
     <Content Include="Jenn\MasterPage\AdminMasterPage.Master" />
     <None Include="Web.Debug.config">
@@ -90,6 +91,13 @@
     </Compile>
     <Compile Include="Jenn\Login\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jenn\Login\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jenn\Login\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Jenn\MasterPage\AdminMasterPage.Master.cs">
       <DependentUpon>AdminMasterPage.Master</DependentUpon>
