@@ -72,6 +72,7 @@
     </Content>
     <Content Include="Jenn\Login\WebForm1.aspx" />
     <Content Include="Jenn\Login\WebForm2.aspx" />
+    <Content Include="Ken\admin\sortedList.aspx" />
     <Content Include="Ken\StyleSheet1.css" />
     <Content Include="Ken\WebForm2.aspx" />
     <Content Include="packages.config" />
@@ -115,6 +116,13 @@
     </Compile>
     <Compile Include="Jenn\MasterPage\UserMasterPage.Master.designer.cs">
       <DependentUpon>UserMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Ken\admin\sortedList.aspx.cs">
+      <DependentUpon>sortedList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ken\admin\sortedList.aspx.designer.cs">
+      <DependentUpon>sortedList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Ken\WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
