@@ -70,6 +70,7 @@
     <Content Include="App_Data\OPESData_log.ldf">
       <DependentUpon>OPESData.mdf</DependentUpon>
     </Content>
+    <Content Include="Jenn\MasterPage\AdminMainMenu.aspx" />
     <Content Include="Ken\admin\sortedList.aspx" />
     <Content Include="Ken\staff\abcacsbdfkjsdbf.aspx" />
     <Content Include="Ken\StyleSheet1.css" />
@@ -90,6 +91,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Jenn\MasterPage\AdminMainMenu.aspx.cs">
+      <DependentUpon>AdminMainMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jenn\MasterPage\AdminMainMenu.aspx.designer.cs">
+      <DependentUpon>AdminMainMenu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Jenn\MasterPage\AdminMasterPage.Master.cs">
       <DependentUpon>AdminMasterPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
