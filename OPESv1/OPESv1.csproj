@@ -74,6 +74,8 @@
     <Content Include="Jenn\Login\WebForm2.aspx" />
     <Content Include="Ken\admin\sortedList.aspx" />
     <Content Include="Ken\StyleSheet1.css" />
+    <Content Include="Ken\user\skillTest.aspx" />
+    <Content Include="Ken\user\applicationForm.aspx" />
     <Content Include="Ken\WebForm2.aspx" />
     <Content Include="packages.config" />
     <Content Include="Jenn\MasterPage\AdminMasterPage.Master" />
@@ -123,6 +125,20 @@
     </Compile>
     <Compile Include="Ken\admin\sortedList.aspx.designer.cs">
       <DependentUpon>sortedList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ken\user\skillTest.aspx.cs">
+      <DependentUpon>skillTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ken\user\skillTest.aspx.designer.cs">
+      <DependentUpon>skillTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ken\user\applicationForm.aspx.cs">
+      <DependentUpon>applicationForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ken\user\applicationForm.aspx.designer.cs">
+      <DependentUpon>applicationForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Ken\WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
