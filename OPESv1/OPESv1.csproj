@@ -72,6 +72,8 @@
     </Content>
     <Content Include="Jenn\Login\WebForm1.aspx" />
     <Content Include="Jenn\Login\WebForm2.aspx" />
+    <Content Include="Ken\StyleSheet1.css" />
+    <Content Include="Ken\WebForm2.aspx" />
     <Content Include="packages.config" />
     <Content Include="Jenn\MasterPage\AdminMasterPage.Master" />
     <None Include="Web.Debug.config">
@@ -106,11 +108,16 @@
     <Compile Include="Jenn\MasterPage\AdminMasterPage.Master.designer.cs">
       <DependentUpon>AdminMasterPage.Master</DependentUpon>
     </Compile>
+    <Compile Include="Ken\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ken\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Ken\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
