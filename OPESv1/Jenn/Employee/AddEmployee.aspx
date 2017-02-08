@@ -36,7 +36,7 @@
                     </telerik:RadLabel>
                 </td>
                 <td style="width: 328px">
-                    <telerik:RadDropDownList ID="RadDropDownList1" runat="server" SelectedText="DropDownListItem1" Skin="Bootstrap">
+                    <telerik:RadDropDownList ID="RadDropDownList1" runat="server" SelectedText="DropDownListItem1" Skin="Bootstrap" Width="160px">
                         <Items>
                             <telerik:DropDownListItem runat="server" Selected="True" Text="DropDownListItem1" />
                             <telerik:DropDownListItem runat="server" Text="DropDownListItem2" />
@@ -89,13 +89,14 @@
                     </telerik:RadLabel>
                 </td>
                 <td style="width: 328px">
-                    <telerik:RadComboBox ID="RadComboBox1" Runat="server" Filter="Contains" Skin="Bootstrap">
+                    <telerik:RadComboBox ID="RadComboBox1" Runat="server" DataSourceID="XmlDataSource2" Filter="Contains" MarkFirstMatch="True" Skin="Bootstrap">
                         <Items>
                             <telerik:RadComboBoxItem runat="server" Text="RadComboBoxItem1" Value="RadComboBoxItem1" />
                             <telerik:RadComboBoxItem runat="server" Text="RadComboBoxItem2" Value="RadComboBoxItem2" />
                             <telerik:RadComboBoxItem runat="server" Text="RadComboBoxItem3" Value="RadComboBoxItem3" />
                         </Items>
                     </telerik:RadComboBox>
+                    <asp:XmlDataSource ID="XmlDataSource2" runat="server" DataFile="~/Jenn/NationalitiesList.xml"></asp:XmlDataSource>
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -154,13 +155,14 @@
                     </telerik:RadLabel>
                 </td>
                 <td style="width: 328px">
-                    <telerik:RadComboBox ID="RadComboBox2" Runat="server" AllowCustomText="True" Filter="Contains" Skin="Bootstrap">
+                    <telerik:RadComboBox ID="RadComboBox2" Runat="server" DataSourceID="XmlDataSource1" DataTextField="name" DataValueField="name" Filter="StartsWith" MarkFirstMatch="True" Skin="Bootstrap">
                         <Items>
                             <telerik:RadComboBoxItem runat="server" Text="RadComboBoxItem1" Value="RadComboBoxItem1" />
                             <telerik:RadComboBoxItem runat="server" Text="RadComboBoxItem2" Value="RadComboBoxItem2" />
                             <telerik:RadComboBoxItem runat="server" Text="RadComboBoxItem3" Value="RadComboBoxItem3" />
                         </Items>
                     </telerik:RadComboBox>
+                    <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/Jenn/CountryList.xml"></asp:XmlDataSource>
                 </td>
                 <td>&nbsp;</td>
             </tr>

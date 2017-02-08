@@ -139,6 +139,15 @@ namespace OPESv1.Jenn.Employee {
         protected global::Telerik.Web.UI.RadComboBox RadComboBox1;
         
         /// <summary>
+        /// XmlDataSource2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.XmlDataSource XmlDataSource2;
+        
+        /// <summary>
         /// RadLabel8 control.
         /// </summary>
         /// <remarks>
@@ -227,6 +236,15 @@ namespace OPESv1.Jenn.Employee {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Telerik.Web.UI.RadComboBox RadComboBox2;
+        
+        /// <summary>
+        /// XmlDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.XmlDataSource XmlDataSource1;
         
         /// <summary>
         /// RadLabel13 control.
