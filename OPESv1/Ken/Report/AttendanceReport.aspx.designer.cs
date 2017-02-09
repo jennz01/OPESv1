@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OPESv1.Ken.user
+namespace OPESv1.Ken.Report
 {
 
 
-    public partial class WebForm1
+    public partial class AttendanceReport
     {
 
         /// <summary>

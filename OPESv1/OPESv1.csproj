@@ -43,11 +43,40 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Deployment" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -70,15 +99,27 @@
     <Content Include="App_Data\OPESData_log.ldf">
       <DependentUpon>OPESData.mdf</DependentUpon>
     </Content>
-    <Content Include="Ken\admin\sortedList.aspx" />
-    <Content Include="Ken\staff\abcacsbdfkjsdbf.aspx" />
+    <Content Include="Ken\Attendance\attendance.aspx" />
+    <Content Include="Ken\Attendance\attendanceList.aspx" />
+    <Content Include="Ken\LeaveManagement\leaveApplication.aspx" />
+    <Content Include="Ken\LeaveManagement\hrApproval.aspx" />
+    <Content Include="Ken\RecruitmentManagement\question.aspx" />
+    <Content Include="Ken\RecruitmentManagement\scheduleInterview.aspx" />
+    <Content Include="Ken\RecruitmentManagement\applicationList.aspx" />
+    <Content Include="Ken\Report\AttendanceReport.aspx" />
+    <Content Include="Ken\Report\LeaveReport.aspx" />
     <Content Include="Ken\StyleSheet1.css" />
-    <Content Include="Ken\user\skillTest.aspx" />
-    <Content Include="Ken\user\applicationForm.aspx" />
+    <Content Include="Ken\RecruitmentManagement\skillTest.aspx" />
+    <Content Include="Ken\RecruitmentManagement\applicationForm.aspx" />
     <Content Include="Ken\WebForm2.aspx" />
     <Content Include="packages.config" />
     <Content Include="Jenn\MasterPage\AdminMasterPage.Master" />
     <Content Include="Jenn\MasterPage\UserMasterPage.Master" />
+    <Content Include="Ken\MasterPage\UserMasterPage.Master" />
+    <Content Include="Ken\MasterPage\AdminMasterPage.Master" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -87,7 +128,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Jenn\MasterPage\AdminMasterPage.Master.cs">
@@ -104,33 +147,96 @@
     <Compile Include="Jenn\MasterPage\UserMasterPage.Master.designer.cs">
       <DependentUpon>UserMasterPage.Master</DependentUpon>
     </Compile>
-    <Compile Include="Ken\admin\sortedList.aspx.cs">
-      <DependentUpon>sortedList.aspx</DependentUpon>
+    <Compile Include="Ken\Attendance\attendance.aspx.cs">
+      <DependentUpon>attendance.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Ken\admin\sortedList.aspx.designer.cs">
-      <DependentUpon>sortedList.aspx</DependentUpon>
+    <Compile Include="Ken\Attendance\attendance.aspx.designer.cs">
+      <DependentUpon>attendance.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Ken\staff\abcacsbdfkjsdbf.aspx.cs">
-      <DependentUpon>abcacsbdfkjsdbf.aspx</DependentUpon>
+    <Compile Include="Ken\Attendance\attendanceList.aspx.cs">
+      <DependentUpon>attendanceList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Ken\staff\abcacsbdfkjsdbf.aspx.designer.cs">
-      <DependentUpon>abcacsbdfkjsdbf.aspx</DependentUpon>
+    <Compile Include="Ken\Attendance\attendanceList.aspx.designer.cs">
+      <DependentUpon>attendanceList.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Ken\user\skillTest.aspx.cs">
+    <Compile Include="Ken\LeaveManagement\leaveApplication.aspx.cs">
+      <DependentUpon>leaveApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ken\LeaveManagement\leaveApplication.aspx.designer.cs">
+      <DependentUpon>leaveApplication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ken\LeaveManagement\hrApproval.aspx.cs">
+      <DependentUpon>hrApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ken\LeaveManagement\hrApproval.aspx.designer.cs">
+      <DependentUpon>hrApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ken\MasterPage\AdminMasterPage.Master.cs">
+      <DependentUpon>AdminMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ken\MasterPage\AdminMasterPage.Master.designer.cs">
+      <DependentUpon>AdminMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Ken\MasterPage\UserMasterPage.Master.cs">
+      <DependentUpon>UserMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ken\MasterPage\UserMasterPage.Master.designer.cs">
+      <DependentUpon>UserMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Ken\RecruitmentManagement\question.aspx.cs">
+      <DependentUpon>question.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ken\RecruitmentManagement\question.aspx.designer.cs">
+      <DependentUpon>question.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ken\RecruitmentManagement\scheduleInterview.aspx.cs">
+      <DependentUpon>scheduleInterview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ken\RecruitmentManagement\scheduleInterview.aspx.designer.cs">
+      <DependentUpon>scheduleInterview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ken\RecruitmentManagement\applicationList.aspx.cs">
+      <DependentUpon>applicationList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ken\RecruitmentManagement\applicationList.aspx.designer.cs">
+      <DependentUpon>applicationList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ken\RecruitmentManagement\skillTest.aspx.cs">
       <DependentUpon>skillTest.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Ken\user\skillTest.aspx.designer.cs">
+    <Compile Include="Ken\RecruitmentManagement\skillTest.aspx.designer.cs">
       <DependentUpon>skillTest.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Ken\user\applicationForm.aspx.cs">
+    <Compile Include="Ken\RecruitmentManagement\applicationForm.aspx.cs">
       <DependentUpon>applicationForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Ken\user\applicationForm.aspx.designer.cs">
+    <Compile Include="Ken\RecruitmentManagement\applicationForm.aspx.designer.cs">
       <DependentUpon>applicationForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ken\Report\AttendanceReport.aspx.cs">
+      <DependentUpon>AttendanceReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ken\Report\AttendanceReport.aspx.designer.cs">
+      <DependentUpon>AttendanceReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ken\Report\LeaveReport.aspx.cs">
+      <DependentUpon>LeaveReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ken\Report\LeaveReport.aspx.designer.cs">
+      <DependentUpon>LeaveReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="Ken\WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>

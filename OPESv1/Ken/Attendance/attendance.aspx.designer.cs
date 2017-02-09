@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OPESv1.Ken.admin
+namespace OPESv1.Ken.Attendance
 {
 
 
-    public partial class sortedList
+    public partial class attendance
     {
 
         /// <summary>
