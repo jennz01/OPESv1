@@ -92,14 +92,12 @@
   <ItemGroup>
     <Compile Include="Jenn\MasterPage\AdminMasterPage.Master.cs">
       <DependentUpon>AdminMasterPage.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Jenn\MasterPage\AdminMasterPage.Master.designer.cs">
       <DependentUpon>AdminMasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Jenn\MasterPage\UserMasterPage.Master.cs">
       <DependentUpon>UserMasterPage.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Jenn\MasterPage\UserMasterPage.Master.designer.cs">
       <DependentUpon>UserMasterPage.Master</DependentUpon>
