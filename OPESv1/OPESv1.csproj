@@ -139,28 +139,24 @@
     </Compile>
     <Compile Include="Ken\admin\sortedList.aspx.cs">
       <DependentUpon>sortedList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Ken\admin\sortedList.aspx.designer.cs">
       <DependentUpon>sortedList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Ken\staff\abcacsbdfkjsdbf.aspx.cs">
       <DependentUpon>abcacsbdfkjsdbf.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Ken\staff\abcacsbdfkjsdbf.aspx.designer.cs">
       <DependentUpon>abcacsbdfkjsdbf.aspx</DependentUpon>
     </Compile>
     <Compile Include="Ken\user\skillTest.aspx.cs">
       <DependentUpon>skillTest.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Ken\user\skillTest.aspx.designer.cs">
       <DependentUpon>skillTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="Ken\user\applicationForm.aspx.cs">
       <DependentUpon>applicationForm.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Ken\user\applicationForm.aspx.designer.cs">
       <DependentUpon>applicationForm.aspx</DependentUpon>
