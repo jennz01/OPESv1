@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LeaveReport.aspx.cs" Inherits="OPESv1.Ken.Report.LeaveReport" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="applicationForm.aspx.cs" Inherits="OPESv1.Ken.user.WebForm1" %>
 
 <!DOCTYPE html>
 

@@ -64,22 +64,12 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="Telerik.Web.UI, Version=2016.1.113.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\Telerik\UI for ASP.NET AJAX Q1 2016\Bin45\Telerik.Web.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Web.UI.Skins">
-      <HintPath>C:\Program Files (x86)\Telerik\UI for ASP.NET AJAX Q1 2016\Bin45\Telerik.Web.UI.Skins.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\OPESData.mdf" />
     <Content Include="App_Data\OPESData_log.ldf">
       <DependentUpon>OPESData.mdf</DependentUpon>
     </Content>
-    <Content Include="Jenn\Employee\AddEmployee.aspx" />
-    <Content Include="Jenn\Employee\EmployeeMain.aspx" />
-    <Content Include="Jenn\MasterPage\AdminMainMenu.aspx" />
     <Content Include="Ken\admin\sortedList.aspx" />
     <Content Include="Ken\staff\abcacsbdfkjsdbf.aspx" />
     <Content Include="Ken\StyleSheet1.css" />
@@ -97,42 +87,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Jenn\Employee\AddEmployee.aspx.cs">
-      <DependentUpon>AddEmployee.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Jenn\Employee\AddEmployee.aspx.designer.cs">
-      <DependentUpon>AddEmployee.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Jenn\Employee\EmployeeMain.aspx.cs">
-      <DependentUpon>EmployeeMain.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Jenn\Employee\EmployeeMain.aspx.designer.cs">
-      <DependentUpon>EmployeeMain.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Jenn\MasterPage\AdminMainMenu.aspx.cs">
-      <DependentUpon>AdminMainMenu.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Jenn\MasterPage\AdminMainMenu.aspx.designer.cs">
-      <DependentUpon>AdminMainMenu.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Jenn\MasterPage\AdminMasterPage.Master.cs">
       <DependentUpon>AdminMasterPage.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Jenn\MasterPage\AdminMasterPage.Master.designer.cs">
       <DependentUpon>AdminMasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Jenn\MasterPage\UserMasterPage.Master.cs">
       <DependentUpon>UserMasterPage.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Jenn\MasterPage\UserMasterPage.Master.designer.cs">
       <DependentUpon>UserMasterPage.Master</DependentUpon>
@@ -172,9 +137,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Jenn\Login\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
